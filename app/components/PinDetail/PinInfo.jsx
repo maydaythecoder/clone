@@ -21,7 +21,6 @@ const accordionData = [
       Great post 😁!
     `,
   },
-
 ];
 
 function classNames(...classes) {
@@ -231,7 +230,7 @@ function PinInfo({ pinDetail }) {
       >
         Save
       </button>
-      
+
       <div className="mt-28 absolute">
         <h2 className="text-[30px] font-bold mb-5 w-96">{pinDetail.title}</h2>
         <h2 className="mb-10 w-96">{pinDetail.desc}</h2>
@@ -243,7 +242,7 @@ function PinInfo({ pinDetail }) {
           Follow
         </button>
       </div>
-         {/* add comment */}
+      {/* add comment */}
       <div className="absolute justify-between space-x-4 mt-[700px] shadow-t -ml-10 pl-5 w-[534px]">
         <div className="flex-shrink-0">
           <img
