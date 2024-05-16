@@ -13,6 +13,16 @@ import {
   ChevronDownIcon,
 } from "@heroicons/react/20/solid";
 import UserTag from "../UserTag";
+import Accordion from "../accordian";
+const accordionData = [
+  {
+    title: "Comments",
+    content: `
+      Great post 😁!
+    `,
+  },
+
+];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -232,7 +242,7 @@ function PinInfo({ pinDetail }) {
           Follow
         </button>
       </div>
-
+         {/* add comment */}
       <div className="absolute justify-between space-x-4 mt-[700px] shadow-t -ml-10 pl-5 w-[534px]">
         <div className="flex-shrink-0">
           <img
@@ -315,6 +325,9 @@ function PinInfo({ pinDetail }) {
           </form>
         </div>
       </div>
+
+      {/* comment accordian */}
+      <Accordion className="" sections={accordionData} />
     </div>
   );
 }
