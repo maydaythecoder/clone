@@ -231,6 +231,7 @@ function PinInfo({ pinDetail }) {
       >
         Save
       </button>
+      
       <div className="mt-28 absolute">
         <h2 className="text-[30px] font-bold mb-5 w-96">{pinDetail.title}</h2>
         <h2 className="mb-10 w-96">{pinDetail.desc}</h2>
