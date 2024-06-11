@@ -1,7 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import UserTag from "../UserTag";
+import DropDown from "../DropDownMenu";
 import { useRouter } from "next/navigation";
+import ShareButton from "../ShareButton";
 
 function PinItem({ pin }) {
   const router = useRouter();
@@ -35,6 +37,9 @@ function PinItem({ pin }) {
       {/* <h2 className='font-bold 
         text-[18px] mb-1 mt-2 line-clamp-2'>{pin.title}</h2> */}
       {/* <UserTag user={user} /> */}
+      <DropDown />
+      <ShareButton />
+
     </div>
   );
 }
