@@ -60,7 +60,7 @@ function Header() {
          text-black p-2 rounded-full
          text-[15px]
           hidden md:block hover:text-white hover:bg-black hover:font-bold"
-        onClick={() => router.push("/")}
+        onClick={() => router.push("/explore")}
       >
         Explore
       </button>
