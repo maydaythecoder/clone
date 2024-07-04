@@ -6,7 +6,6 @@ const ShareSvg = () => {
       <svg
         aria-hidden="true"
         aria-label=""
-        class=""
         height="16"
         role="img"
         viewBox="0 0 24 24"

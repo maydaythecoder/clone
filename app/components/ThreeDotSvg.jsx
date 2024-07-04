@@ -6,7 +6,7 @@ const ThreeDotSvg = () => {
       <svg
         aria-hidden="true"
         aria-label=""
-        class="Uvi gUZ U9O kVc"
+        className="Uvi gUZ U9O kVc"
         height="16"
         role="img"
         viewBox="0 0 24 24"
