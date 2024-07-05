@@ -26,9 +26,13 @@ export default function Test() {
         return <div>Loading...</div>;
     }
 
+    if (!data.urls) {
+        return <div>Data loaded, but no URLs found</div>;
+    }
+
     return (
         <div>
-        <img src={data.urls.regular} alt={data.alt_description} />
+            <img src={data.urls.regular} alt={data.alt_description} />
             <h1>{data.alt_description}</h1>
             <img src={data.urls.small} alt={data.alt_description} />
             <p>{data.description}</p>
