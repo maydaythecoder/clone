@@ -35,7 +35,7 @@ function Header() {
   };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 shadow-md flex justify-between gap-3 md:gap-2 items-center p-6 align-middle lg:h-20 bg-white">
+    <div className="fixed top-0 left-0 right-0 shadow-md flex justify-between gap-3 md:gap-2 items-center p-6 align-middle lg:h-20 bg-white z-50">
       <Image
         src="/logo.png"
         alt="logo"

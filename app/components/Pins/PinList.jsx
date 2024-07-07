@@ -1,6 +1,8 @@
 import app from "@/app/Shared/firebaseConfig";
 import React from "react";
 import PinItem from "./PinItem";
+import Test from "../test";
+
 
 function PinList({ listOfPins }) {
   return (
@@ -13,6 +15,7 @@ function PinList({ listOfPins }) {
       {listOfPins.map((item, index) => (
         <PinItem pin={item} />
       ))}
+      <Test />
     </div>
   );
 }
