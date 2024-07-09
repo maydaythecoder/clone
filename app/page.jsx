@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import { collection, getDocs, getFirestore, query } from "firebase/firestore";
 import app from "./Shared/firebaseConfig";
 import PinList from "./components/Pins/PinList";
-import Test from "./components/test";
+
+//TODO: find a way to store api data to db
 
 export default function Home() {
   const db = getFirestore(app);
