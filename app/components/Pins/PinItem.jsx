@@ -1,19 +1,19 @@
-import Image from "next/image";
-import React from "react";
-import UserTag from "../UserTag";
+import React from 'react';
+import Image from 'next/image';
 import DropDown from "../DropDownMenu";
 import { useRouter } from "next/navigation";
 import ShareButton from "../ShareButton";
 
-function PinItem({ pin }) {
+
+const PinItem = ({ pin }) => {
   const router = useRouter();
-  const user = {
-    name: pin?.userName,
-    image: pin?.userImage,
-  };
+  // const user = {
+  //   name: pin?.userName,
+  //   image: pin?.userImage,
+  // };
   return (
-    <div className="">
-      <div
+    <div className="pin-item">
+    <div
         className="relative 
        before:absolute
        before:h-full before:w-full
@@ -25,21 +25,22 @@ function PinItem({ pin }) {
        "
         onClick={() => router.push("/pin/" + pin.id)}
       >
-        <Image
-          src={pin.image}
-          alt={pin.title}
-          width={500}
-          height={500}
-          className="rounded-3xl 
-        cursor-pointer relative z-0"
-        />
-      </div>
-      {/* <h2 className='font-bold 
-        text-[18px] mb-1 mt-2 line-clamp-2'>{pin.title}</h2> */}
-      {/* <UserTag user={user} /> */}
-      <DropDown />
+      <Image 
+        src={pin.image || pin.urls?.regular || pin.urls?.small || '/default.jpg'} // Add a default src in case all URLs are missing
+        alt={pin.alt_description || 'Image'} // Add a default alt text
+        width={500} 
+        height={500} 
+        className="rounded-3xl cursor-pointer relative z-0" 
+        loading="lazy" 
+        decoding="async"
+      />
+      <div className="pin-details">
+        {/* <p>{pin.description || 'No description available'}</p> */}
+        {/* <p>{pin.user?.name || 'Unknown user'}</p> */}
+        <DropDown />
       <ShareButton />
-
+      </div>
+      </div>
     </div>
   );
 }
