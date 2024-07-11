@@ -4,7 +4,7 @@ import { collection, getDocs, getFirestore, query } from "firebase/firestore";
 import app from "./Shared/firebaseConfig";
 import PinList from "./components/Pins/PinList";
 
-//TODO: find a way to store api data to db
+//TODO: fix pin/[pinId]/page.jsx to work with api data
 
 export default function Home() {
   const db = getFirestore(app);
