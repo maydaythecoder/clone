@@ -5,7 +5,7 @@ function PinImage({ pinDetail }) {
   return (
     <div>
       <Image
-        src={pinDetail.image}
+        src={pinDetail.image || pinDetail.urls?.regular || pinDetail.urls?.small || "/default.jpg"}
         alt={pinDetail.title}
         width={1000}
         height={1000}

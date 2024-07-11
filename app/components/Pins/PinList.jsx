@@ -15,7 +15,7 @@ function PinList({ listOfPins }) {
       {listOfPins.map((item, index) => (
         <PinItem pin={item} />
       ))}
-      {/* <Test /> */}
+       {/* <Test /> */}
     </div>
   );
 }

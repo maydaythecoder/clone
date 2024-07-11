@@ -52,7 +52,7 @@ function PinDetail({ params }) {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-5xl">
               <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-10 shadow-[0_10px_20px_rgba(0,0,0,0.5)] rounded-2xl ">
-                <PinImage pinDetail={pinDetail} className="h-full lg:w-full " />
+                <PinImage pinDetail={pinDetail || {image: pinDetail.urls?.regular}} className="h-full lg:w-full " />
                 <div className="">
                   <PinInfo pinDetail={pinDetail} />
                 </div>

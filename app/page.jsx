@@ -13,6 +13,8 @@ export default function Home() {
   useEffect(() => {
     getAllPins();
   }, []);
+  // console.log("Fetching data from:", process.env.IMAGE_API_URL);
+
 
   const getAllPins = async () => {
     setListOfPins([]);
