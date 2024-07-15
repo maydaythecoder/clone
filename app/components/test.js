@@ -1,8 +1,7 @@
-// test.js
 import React, { useEffect, useState } from "react";
 import { GET } from "../api/images/route";
 import { db } from '../Shared/firebaseConfig';
-import { collection, addDoc } from "firebase/firestore";
+import { collection, doc, setDoc } from "firebase/firestore";
 import DropDown from "./DropDownMenu";
 import ShareButton from "./ShareButton";
 
@@ -25,7 +24,8 @@ export default function Test() {
 
   const addToFirestore = async (item) => {
     try {
-      await addDoc(collection(db, "pinterest-post"), {
+      const docRef = doc(collection(db, "pinterest-post"), item.id);
+      await setDoc(docRef, {
         id: item.id,
         slug: item.slug,
         alternative_slugs: item.alternative_slugs,

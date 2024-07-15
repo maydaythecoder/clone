@@ -3,8 +3,10 @@ import { useEffect, useState } from "react";
 import { collection, getDocs, getFirestore, query } from "firebase/firestore";
 import app from "./Shared/firebaseConfig";
 import PinList from "./components/Pins/PinList";
+import Test from "./components/test";
 
 //TODO: fix pin/[pinId]/page.jsx to work with api data
+//TODO: document id and image id should be the same in firestore
 
 export default function Home() {
   const db = getFirestore(app);
@@ -31,6 +33,7 @@ export default function Home() {
   return (
     <div className="p-3 pt-20">
       <PinList listOfPins={listOfPins} /> 
+      {/* <Test/> */}
     </div>
   );
 }
