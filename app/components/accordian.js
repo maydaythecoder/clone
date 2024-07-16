@@ -16,6 +16,8 @@ const accordionContentStyles = {
   padding: "5px",
   margin: "20px",
   background: "#FFFFFF",
+  overflow: "auto", // Added overflow auto
+  maxHeight: "200px", // Set a max height for scroll
 };
 
 const AccordionSection = ({
@@ -67,7 +69,7 @@ const AccordionSection = ({
         </div>
       </div>
       {isActiveSection && (
-        <div className=" h-64 truncate" style={accordionContentStyles}>
+        <div className="h-64 truncate" style={accordionContentStyles}>
           {section.content}
         </div>
       )}
@@ -76,7 +78,7 @@ const AccordionSection = ({
 };
 
 const Accordion = ({ sections }) => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(null); // Set default to null to close all sections
   return (
     <div style={accordionStyles}>
       {sections.map((section, index) => (

@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import DropDown from "../DropDownMenu";
 import { useRouter } from "next/navigation";
-import ShareButton from "../ShareButton";
+import ShareButton from "../../Shared/components/ShareButton";
 
 
 const PinItem = ({ pin }) => {

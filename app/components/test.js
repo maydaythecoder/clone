@@ -3,7 +3,7 @@ import { GET } from "../api/images/route";
 import { db } from '../Shared/firebaseConfig';
 import { collection, doc, setDoc } from "firebase/firestore";
 import DropDown from "./DropDownMenu";
-import ShareButton from "./ShareButton";
+import ShareButton from "../Shared/components/ShareButton";
 
 export default function Test() {
   const [data, setData] = useState([]);

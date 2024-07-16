@@ -1,5 +1,5 @@
 import { Menu, MenuButton, MenuItem, Transition } from '@headlessui/react'
-import ThreeDotSvg from "./ThreeDotSvg";
+import ThreeDotSvg from "../Shared/components/ThreeDotSvg";
 
 const items = [
   { name: 'Save and schedule', href: '#' },
