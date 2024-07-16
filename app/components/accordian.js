@@ -31,7 +31,7 @@ const AccordionSection = ({
     setActiveIndex(nextIndex);
   };
   return (
-    <div className="absolute w-96 mt-96">
+    <div className=" w-96 ">
       <div style={accordionTitleStyles} onClick={toggleSection}>
         <div>{section.title}</div>
         <div>

@@ -5,8 +5,17 @@ import app from "./Shared/firebaseConfig";
 import PinList from "./components/Pins/PinList";
 import Test from "./components/test";
 
-//TODO: fix pin/[pinId]/page.jsx to work with api data
-//TODO: document id and image id should be the same in firestore
+//TODO: fix ./Shared/components/PinInteractions in pin/[pinId]/page.jsx to always align with the bottom of the pin
+//TODO: fix comment accordian to only show part of it, set overflow to scroll and add comment interactions
+//TODO: improve comment accordian to add replies
+//TODO: add post interactions with proper links
+//TODO: improve explore page
+//TODO: add interaction to search bar
+//TODO: fix navbar to track user interaction and state
+//TODO: add error handling
+//TODO: improve user page to work with api data
+//TODO: add boards to user page
+
 
 export default function Home() {
   const db = getFirestore(app);
