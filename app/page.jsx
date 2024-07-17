@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { collection, getDocs, getFirestore, query } from "firebase/firestore";
 import app from "./Shared/firebaseConfig";
 import PinList from "./components/Pins/PinList";
+import { Categories } from "./components/Categories";
 import Test from "./components/test";
 
 //TODO: fix ./Shared/components/PinInteractions in pin/[pinId]/page.jsx to always align with the bottom of the pin
@@ -38,6 +39,7 @@ export default function Home() {
 
   return (
     <div className="p-3 pt-20">
+      <Categories />
       <PinList listOfPins={listOfPins} /> 
       {/* <Test/> */}
     </div>
