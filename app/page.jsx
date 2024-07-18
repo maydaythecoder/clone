@@ -6,8 +6,8 @@ import PinList from "./components/Pins/PinList";
 import { Categories } from "./components/Categories";
 import Test from "./components/test";
 
-//TODO: fix ./Shared/components/PinInfo in pin/[pinId]/page.jsx to not overlap with other elements
-//TODO: fix ./Shared/components/PinInteractions in pin/[pinId]/page.jsx to have a minimum height with no overlap
+//TODO: fix pin/[pinId]/page.jsx add animation to comment accordian
+//TODO: fix pin/[pinId]/page.jsx add media element to individual comments in the comment accordian
 //TODO: fix ./Shared/components/PinImage in pin/[pinId]/page.jsx so the image is centered if its not big enough
 //TODO: fix comment accordian to only show part of it, set overflow to scroll and add comment interactions
 //TODO: improve comment accordian to add replies

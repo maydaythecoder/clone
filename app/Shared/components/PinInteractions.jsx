@@ -8,7 +8,7 @@ import {
 const PinInteractions = () => {
   return (
     <div>
-              <div className=" justify-between space-x-2 shadow-t ml-[511px] -mt-64 pl-5 w-[512px] ">
+              <div className=" justify-between space-x-2 shadow-t ml-[511px] -mt-36 pl-5 w-[512px] ">
         <div className="flex-shrink-0">
           <img
             className=" absolute mt-[10px] -ml-3 h-10 w-10 rounded-full"
