@@ -2,7 +2,6 @@
 import React from 'react'
 import { useColor } from 'color-thief-react'
 import { colord } from 'colord'
-import { mix } from 'polished';
 
 const cards = [
     {
@@ -47,11 +46,11 @@ const CategoryCard = ({ Image1, Image2, Image3, Category }) => {
             
           .toHex()
       }
-      return '#A9A9A9'
+      return '#A9A9A9   '
     }, [color])
   
     return (
-      <div className="overflow-hidden rounded-lg m-3 w-64 h-32 group " style={{ backgroundColor: bgColor }}>
+      <div className="overflow-hidden rounded-lg m-1 mt-2 w-72 h-32 group " style={{ backgroundColor: bgColor }}>
         <div className="px-4 py-5 sm:p-6 opacity-70 bg-gray-300">
           <div className="grid grid-cols-2 gap-4">
             <div className="relative w-24 h-24">
