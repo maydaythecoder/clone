@@ -5,6 +5,7 @@ import PinInfo from "./../../components/PinDetail/PinInfo";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "./../../Shared/firebaseConfig";
 import HomeArrow from "./../../Shared/components/HomeArrow";
+import PinInteractions from "@/app/Shared/components/PinInteractions";
 
 function PinDetail({ params }) {
   const [pinDetail, setPinDetail] = useState([]);
@@ -43,11 +44,12 @@ function PinDetail({ params }) {
         <div className=" bg-white p-3 md:p-12 rounded-2xl md:px-24 lg:px-36 mt-12">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-5xl">
-              <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-10 shadow-[0_10px_20px_rgba(0,0,0,0.5)] rounded-2xl ">
+              <div className="grid grid-cols-1 lg:grid-cols-2 shadow-[0_10px_20px_rgba(0,0,0,0.5)] rounded-2xl ">
                 <PinImage pinDetail={pinDetail || {image: pinDetail.urls?.regular}} className="h-full lg:w-full " />
-                <div className="">
+                <div className=" p-5">
                   <PinInfo pinDetail={pinDetail} />
                 </div>
+                <PinInteractions />
               </div>
             </div>
           </div>

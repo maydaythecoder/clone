@@ -59,7 +59,7 @@ const PinUserTag = ({ pinId }) => {
       </button>
       <div style={{ marginBottom: '100px', padding: '10px' }}>
         <Accordion sections={accordionData} />
-        <PinInteractions />
+        {/* <PinInteractions /> */}
       </div>
     </div>
   );

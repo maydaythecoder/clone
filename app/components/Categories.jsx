@@ -51,9 +51,9 @@ const CategoryCard = ({ Image1, Image2, Image3, Category }) => {
   
     return (
       <div className="overflow-hidden rounded-lg m-1 mt-2 w-72 h-32 group " style={{ backgroundColor: bgColor }}>
-        <div className="px-4 py-5 sm:p-6 opacity-70 bg-gray-300">
+        <div className="px-4 py-5 sm:p-6 opacity-80 bg-gray-100">
           <div className="grid grid-cols-2 gap-4">
-            <div className="relative w-24 h-24">
+            <div className="relative w-24 h-24 z-30 opacity-100">
               <img src={Image1} alt={Category} className='w-16 h-20 rounded-xl absolute opacity-100 -translate-x-3 -rotate-6 group-hover:-rotate-[10deg] group-hover:-translate-x-4 transition-all duration-300 object-cover' />
               <img src={Image2} alt={Category} className='w-16 h-20 rounded-xl absolute opacity-100 group-hover:-translate-y-2 transition-all duration-300 object-cover' />
               <img src={Image3} alt={Category} className='w-16 h-20 rounded-xl absolute opacity-100 translate-x-3 rotate-6 group-hover:rotate-[10deg] group-hover:translate-x-4 transition-all duration-300 object-cover' />

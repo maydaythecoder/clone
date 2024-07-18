@@ -8,18 +8,18 @@ import {
 const PinInteractions = () => {
   return (
     <div>
-              <div className=" justify-between space-x-4  shadow-t -ml-12 pl-5 w-[532px]">
+              <div className=" justify-between space-x-2 shadow-t ml-[511px] -mt-64 pl-5 w-[512px] ">
         <div className="flex-shrink-0">
           <img
-            className=" absolute mt-[70px] -ml-3 h-10 w-10 rounded-full"
+            className=" absolute mt-[10px] -ml-3 h-10 w-10 rounded-full"
             src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
             alt=""
           />
         </div>
 
-        <div className="min-w-0 flex-1 w-[420px] h-20 mt-16">
-          <form action="#" className="relative h-20">
-            <div className="overflow-hidden rounded-full  shadow-sm ring-1 ring-inset ring-gray-300 ml-7 -mr-5">
+        <div className="min-w-0 flex-1 w-[420px] h-20 mt-16 pt-1">
+          <form action="#" className="relative h-20 ">
+            <div className="overflow-hidden rounded-full  shadow-sm ring-1 ring-inset ring-gray-300 ml-7 -mr-5 ">
               <label htmlFor="comment" className="sr-only">
                 Add your comment
               </label>
