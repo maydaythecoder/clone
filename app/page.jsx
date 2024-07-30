@@ -41,7 +41,7 @@ export default function Home() {
   };
 
   return (
-    <div className="p-3 pt-20">
+    <div className="p-3 lg:pt-20 sm:pt-32">
       <Categories />
       <PinList listOfPins={listOfPins} /> 
       {/* <Test/> */}
