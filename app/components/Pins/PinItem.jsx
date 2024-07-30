@@ -12,14 +12,14 @@ const PinItem = ({ pin }) => {
   //   image: pin?.userImage,
   // };
   return (
-    <div className="pin-item">
+    <div className="pin-item group">
     <div
         className="relative 
        before:absolute
        before:h-full before:w-full
        before:rounded-3xl
        before:z-10
-       hover:before:bg-gray-600 
+       group-hover:before:bg-gray-600 
        before:opacity-50
        cursor-pointer
        "
@@ -34,7 +34,7 @@ const PinItem = ({ pin }) => {
         loading="lazy" 
         decoding="async"
       />
-      <div className="pin-details">
+      <div className="pin-details opacity-0 group-hover:opacity-100">
         {/* <p>{pin.description || 'No description available'}</p> */}
         {/* <p>{pin.user?.name || 'Unknown user'}</p> */}
         <DropDown />
