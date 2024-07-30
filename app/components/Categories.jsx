@@ -70,7 +70,7 @@ const CategoryCard = ({ Image1, Image2, Image3, Category }) => {
   
   export const Categories = () => { 
     return (
-      <div className="flex flex-wrap justify-center sm:w-[110vw]">
+      <div className="flex flex-wrap justify-center">
         {cards.map((card, index) => (
           <CategoryCard key={index} {...card} />
         ))}
