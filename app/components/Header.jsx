@@ -6,6 +6,7 @@ import { doc, getFirestore, setDoc } from "firebase/firestore";
 import { HiSearch, HiBell, HiChat } from "react-icons/hi";
 import app from "../Shared/firebaseConfig";
 import { useRouter } from "next/navigation";
+import SearchBar from "./SearchBar";
 
 function Header() {
   const { data: session } = useSession();
@@ -72,20 +73,7 @@ function Header() {
       >
         Create
       </button>
-      <div
-        className="bg-[#e9e9e9] p-2 px-3
-         gap-3 items-center rounded-full w-[70%] hidden md:flex h-10"
-      >
-        <HiSearch
-          className="text-[20px] 
-        text-gray-500"
-        />
-        <input
-          type="text"
-          placeholder="Search"
-          className="bg-transparent outline-none w-full  text-[15px]"
-        />
-      </div>
+      <SearchBar />
       <HiSearch
         className="text-[15px] 
         text-gray-500 md:hidden"
