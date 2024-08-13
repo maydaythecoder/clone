@@ -4,21 +4,20 @@ import { collection, getDocs, getFirestore, query } from "firebase/firestore";
 import app from "./Shared/firebaseConfig";
 import PinList from "./components/Pins/PinList";
 import { Categories } from "./components/Categories";
+import Header from "./components/Header";
 import Test from "./components/test";
 
-//TODO: fix pin/[pinId]/page.jsx add animation to comment accordian
-//TODO: fix pin/[pinId]/page.jsx add recomendations to show similar pins 
-//TODO: fix pin/[pinId]/page.jsx add media element to individual comments in the comment accordian
-//TODO: fix ./Shared/components/PinImage in pin/[pinId]/page.jsx so the image is centered if its not big enough
-//TODO: fix comment accordian to only show part of it, set overflow to scroll and add comment interactions
-//TODO: improve comment accordian to add replies
-//TODO: add post interactions with proper links
-//TODO: improve explore page
-//TODO: add interaction to search bar
 //TODO: fix navbar to track user interaction and state
+//TODO: add post interactions with proper links
+//TODO: improve explore page to work only with provided categories
+//TODO: improve user page to work with api data(get all posts by user)
+//TODO: improve comment accordian to add replies
+//TODO: fix pin/[pinId]/page.jsx add recomendations to show similar pins 
+//TODO: fix pin/[pinId]/page.jsx add animation to comment accordian
+//TODO: fix pin/[pinId]/page.jsx add media element to individual comments in the comment accordian
+//TODO: add interaction to search bar
+//TODO: fix comment accordian to only show part of it, set overflow to scroll and add comment interactions
 //TODO: add error handling
-//TODO: improve user page to work with api data
-//TODO: add boards to user page
 
 
 export default function Home() {
@@ -42,6 +41,7 @@ export default function Home() {
 
   return (
     <div className="p-3 lg:pt-20 sm:pt-32">
+      <Header />
       <Categories />
       <PinList listOfPins={listOfPins} /> 
       {/* <Test/> */}

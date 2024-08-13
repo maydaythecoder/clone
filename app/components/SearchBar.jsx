@@ -3,8 +3,8 @@ import { HiSearch as SearchIcon } from 'react-icons/hi';
 import PropTypes from 'prop-types';
 
 
-const SearchBar = () => {
-// const SearchBar = ({ onSearch }) => {
+// const SearchBar = () => {
+ const SearchBar = ({ onSearch }) => {
   useEffect(() => {
     const form = document.getElementById('search-form');
     const searchInput = document.getElementById('search-input');
@@ -39,8 +39,8 @@ const SearchBar = () => {
         searchIcon.removeEventListener('click', () => form.requestSubmit());
       }
     };
-  }, );
-//   }, [onSearch]);
+//   }, );
+  }, [onSearch]);
 
   return (
     <div
