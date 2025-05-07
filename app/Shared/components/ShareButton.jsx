@@ -1,9 +1,4 @@
-import { Transition } from '@headlessui/react'
 import ShareSvg from "./ShareSvg";
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
 
 const ShareButton = () => {
   return (
