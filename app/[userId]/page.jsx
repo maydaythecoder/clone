@@ -1,19 +1,17 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import app from "../Shared/firebaseConfig";
 import UserInfo from "./../components/UserInfo";
 import {
   collection,
   getDocs,
   getDoc,
   doc,
-  getFirestore,
   query,
   where,
 } from "firebase/firestore";
+import { db } from "../Shared/firebaseConfig";
 import PinList from "./../components/Pins/PinList";
 function Profile({ params }) {
-  const db = getFirestore(app);
   const [userInfo, setUserInfo] = useState();
   const [listOfPins, setListOfPins] = useState([]);
   useEffect(() => {

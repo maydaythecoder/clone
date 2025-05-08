@@ -2,16 +2,15 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
 import { useSession, signIn, signOut } from "next-auth/react";
-import { doc, getFirestore, setDoc } from "firebase/firestore";
+import { doc, setDoc } from "firebase/firestore";
 import { HiSearch, HiBell, HiChat } from "react-icons/hi";
-import app from "../Shared/firebaseConfig";
+import { db } from "../Shared/firebaseConfig";
 import { useRouter } from "next/navigation";
 import SearchBar from "./SearchBar";
 
 function Header() {
   const { data: session } = useSession();
   const router = useRouter();
-  const db = getFirestore(app);
 
   useEffect(() => {
     saveUserInfo();

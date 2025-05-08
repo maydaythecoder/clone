@@ -1,11 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
 import { collection, getDocs, getFirestore, query } from "firebase/firestore";
-import app from "./Shared/firebaseConfig";
+import { db } from "@/app/Shared/firebaseConfig";
 import PinList from "./components/Pins/PinList";
 import { Categories } from "./components/Categories";
 import Header from "./components/Header";
-import Test from "./components/test";
 
 //TODO: improve explore page and categories to work only with provided categories
 //TODO: add post interactions with proper links
@@ -20,7 +19,6 @@ import Test from "./components/test";
 
 
 export default function Home() {
-  const db = getFirestore(app);
   const [listOfPins, setListOfPins] = useState([]);
 
   useEffect(() => {
