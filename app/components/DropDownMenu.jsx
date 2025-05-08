@@ -1,4 +1,4 @@
-import { Menu, Transition } from '@headlessui/react'
+import { Menu, Transition } from '@headlessui/react';
 import ThreeDotSvg from "../Shared/components/ThreeDotSvg";
 
 const items = [
