@@ -1,0 +1,63 @@
+[debug] [2025-05-08T19:49:18.363Z] ----------------------------------------------------------------------
+[debug] [2025-05-08T19:49:18.366Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mayda\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-05-08T19:49:18.368Z] CLI Version:   14.3.0
+[debug] [2025-05-08T19:49:18.368Z] Platform:      win32
+[debug] [2025-05-08T19:49:18.368Z] Node Version:  v22.13.1
+[debug] [2025-05-08T19:49:18.369Z] Time:          Thu May 08 2025 15:49:18 GMT-0400 (Eastern Daylight Time)
+[debug] [2025-05-08T19:49:18.369Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-08T19:49:18.541Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-08T19:49:18.541Z] > authorizing via signed-in user (maydaythecoder@gmail.com)
+[debug] [2025-05-08T19:49:18.541Z] [iam] checking project pintrest-3f6d3 for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2025-05-08T19:49:18.542Z] Checked if tokens are valid: true, expires at: 1746736357826
+[debug] [2025-05-08T19:49:18.542Z] Checked if tokens are valid: true, expires at: 1746736357826
+[debug] [2025-05-08T19:49:18.543Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/pintrest-3f6d3:testIamPermissions [none]
+[debug] [2025-05-08T19:49:18.543Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/pintrest-3f6d3:testIamPermissions x-goog-quota-user=projects/pintrest-3f6d3
+[debug] [2025-05-08T19:49:18.543Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pintrest-3f6d3:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2025-05-08T19:49:18.802Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/pintrest-3f6d3:testIamPermissions 200
+[debug] [2025-05-08T19:49:18.802Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/pintrest-3f6d3:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2025-05-08T19:49:18.803Z] Checked if tokens are valid: true, expires at: 1746736357826
+[debug] [2025-05-08T19:49:18.803Z] Checked if tokens are valid: true, expires at: 1746736357826
+[debug] [2025-05-08T19:49:18.803Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/pintrest-3f6d3 [none]
+[debug] [2025-05-08T19:49:19.094Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/pintrest-3f6d3 200
+[debug] [2025-05-08T19:49:19.094Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/pintrest-3f6d3 {"projectId":"pintrest-3f6d3","projectNumber":"690485159184","displayName":"pintrest","name":"projects/pintrest-3f6d3","resources":{"hostingSite":"pintrest-3f6d3","locationId":"us-central"},"state":"ACTIVE","etag":"1_d9b04915-df31-4624-b395-852accac83c2"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-05-08T19:49:24.900Z] Checked if tokens are valid: true, expires at: 1746736357826
+[debug] [2025-05-08T19:49:24.900Z] Checked if tokens are valid: true, expires at: 1746736357826
+[debug] [2025-05-08T19:49:24.900Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/pintrest-3f6d3/sites/pintrest-3f6d3 [none]
+[debug] [2025-05-08T19:49:25.157Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/pintrest-3f6d3/sites/pintrest-3f6d3 200
+[debug] [2025-05-08T19:49:25.157Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/pintrest-3f6d3/sites/pintrest-3f6d3 {"name":"projects/pintrest-3f6d3/sites/pintrest-3f6d3","defaultUrl":"https://pintrest-3f6d3.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 15.3.2
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] Failed to compile.
+
+../app/components/Pins/PinList.jsx
+Module not found: Can't resolve '@/app/Shared/firebaseConfig'
+
+https://nextjs.org/docs/messages/module-not-found
+
+Import trace for requested module:
+../app/page.jsx
+
+
+[info] 
+
+[info] > Build failed because of webpack errors
+
+[debug] [2025-05-08T19:49:31.208Z] Error: ENOENT: no such file or directory, open 'C:\Users\mayda\code\Pintrest\clone\hosting\.next\server\middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
