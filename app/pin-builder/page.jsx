@@ -1,6 +1,12 @@
+'use client'
+
 import React from "react";
-import Form from "./../components/Form";
-function PinBuilder() {
+import dynamic from 'next/dynamic';
+
+// Dynamically import the Form component with SSR disabled
+const Form = dynamic(() => import('./../components/Form'), { ssr: false });
+
+export default function PinBuilder() {
   return (
     <div
       className="bg-[#e9e9e9] min-h-screen p-8 
@@ -11,4 +17,3 @@ function PinBuilder() {
   );
 }
 
-export default PinBuilder;
