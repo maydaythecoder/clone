@@ -30,7 +30,6 @@ export default function Home() {
     const querySnapshot = await getDocs(q);
     const pins = [];
     querySnapshot.forEach((doc) => {
-      console.log("Fetched pin:", doc.data());
       pins.push(doc.data());
     });
     setListOfPins(pins);

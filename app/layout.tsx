@@ -3,7 +3,11 @@ import { Inter } from "next/font/google";
 import Provider from "./Provider";
 import Header from "./components/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+// Add display: 'swap' to prevent layout shift
+const inter = Inter({ 
+  subsets: ["latin"],
+  display: 'swap'
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -16,11 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} text-black `}>
+    <html lang="en" className={inter.className}>
+      <body className="text-black">
         <Provider>
         {/* <Header /> */}
-
           {children}
         </Provider>
       </body>

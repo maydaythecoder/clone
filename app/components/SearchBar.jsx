@@ -13,7 +13,6 @@ import PropTypes from 'prop-types';
     const handleSubmit = (event) => {
       event.preventDefault();
       const searchTerm = searchInput.value;
-      console.log('Search term:', searchTerm);
       if (typeof onSearch === 'function') {
         onSearch(searchTerm);
       } else {

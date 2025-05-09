@@ -15,7 +15,6 @@ function Profile({ params }) {
   const [userInfo, setUserInfo] = useState();
   const [listOfPins, setListOfPins] = useState([]);
   useEffect(() => {
-    console.log(params.userId.replace("%40", "@"));
     if (params) {
       getUserInfo(params.userId.replace("%40", "@"));
     }

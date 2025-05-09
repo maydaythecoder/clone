@@ -48,7 +48,6 @@ export default function Test() {
         asset_type: item.asset_type,
         user: item.user,
       });
-      console.log("Document successfully written!");
     } catch (error) {
       console.error("Error adding document: ", error);
     }
